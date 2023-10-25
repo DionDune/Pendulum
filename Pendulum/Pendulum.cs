@@ -9,6 +9,7 @@ namespace Pendulum
     internal class Pendulum
     {
         public List<Pendulum> Children { get; set; }
+        public Pendulum Parent { get; set; }
 
         public float pendulumLength { get; set; }
         public float angle { get; set; }
@@ -33,6 +34,7 @@ namespace Pendulum
             CentrePoint_Y = 100;
 
             Children = new List<Pendulum>();
+            Parent = null;
         }
 
         public void Update(float GravityForce)
