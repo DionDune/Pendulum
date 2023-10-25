@@ -7,5 +7,5 @@
      - Middle Click: Creates new Pendulum for each frame 
      
      - Tab: Cycles through Pendulums
-     - Escape: Pauses all physics
+     - Escape: Toggles Pause 
      
