@@ -233,6 +233,12 @@ namespace Pendulum
                 {
                     _spriteBatch.Draw(Color_White, new Rectangle((int)pendulum.x - 6, (int)pendulum.y - 6, 12, 12), Color.Black);
                 }
+
+                //CentrePoints
+                if (pendulum.Parent == null)
+                {
+                    _spriteBatch.Draw(Color_White, new Rectangle((int)pendulum.CentrePoint_X - 5, (int)pendulum.CentrePoint_Y - 5, 10, 10), Color.Red);
+                }
             }
 
 
