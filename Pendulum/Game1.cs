@@ -237,7 +237,7 @@ namespace Pendulum
                 //CentrePoints
                 if (pendulum.Parent == null)
                 {
-                    _spriteBatch.Draw(Color_White, new Rectangle((int)pendulum.CentrePoint_X - 5, (int)pendulum.CentrePoint_Y - 5, 10, 10), Color.Red);
+                    _spriteBatch.Draw(Color_White, new Rectangle((int)pendulum.CentrePoint_X - 3, (int)pendulum.CentrePoint_Y - 3, 6, 6), Color.Red);
                 }
             }
 
