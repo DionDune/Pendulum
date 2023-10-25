@@ -139,6 +139,11 @@ namespace Pendulum
                 Pendulums.Last().Update(GravityForce);
             }
         }
+        private void ClearPendulums()
+        {
+            Pendulums.Clear();
+            PendulumSelectedIndex = -1;
+        }
 
         private void MouseClickHandler()
         {
@@ -174,6 +179,10 @@ namespace Pendulum
             if (CurrentPresses.Contains(Keys.Escape) && !PrevPresses.Contains(Keys.Escape))
             {
                 GamePaused = !GamePaused;
+            }
+            if (CurrentPresses.Contains(Keys.C))
+            {
+                ClearPendulums();
             }
 
             PrevPresses = CurrentPresses;
