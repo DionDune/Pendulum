@@ -106,7 +106,8 @@ namespace Pendulum
                         CentrePoint_Y = Pendulums[PendulumSelectedIndex].y,
                         pendulumLength = PendulumLength,
                         angle = (float)Math.Atan2((double)Mouse.GetState().X - Pendulums[PendulumSelectedIndex].x,
-                                            (double)Mouse.GetState().Y - Pendulums[PendulumSelectedIndex].y)
+                                            (double)Mouse.GetState().Y - Pendulums[PendulumSelectedIndex].y),
+                        Parent = Pendulums[PendulumSelectedIndex]
                     });
                 }
                 else
@@ -118,7 +119,8 @@ namespace Pendulum
                         pendulumLength = (float)Math.Sqrt(Math.Pow((double)Mouse.GetState().X - Pendulums[PendulumSelectedIndex].x, 2) +
                                                     Math.Pow((double)Mouse.GetState().Y - Pendulums[PendulumSelectedIndex].y, 2)),
                         angle = (float)Math.Atan2((double)Mouse.GetState().X - Pendulums[PendulumSelectedIndex].x,
-                                            (double)Mouse.GetState().Y - Pendulums[PendulumSelectedIndex].y)
+                                            (double)Mouse.GetState().Y - Pendulums[PendulumSelectedIndex].y),
+                        Parent = Pendulums[PendulumSelectedIndex]
                     });
                 }
                 
